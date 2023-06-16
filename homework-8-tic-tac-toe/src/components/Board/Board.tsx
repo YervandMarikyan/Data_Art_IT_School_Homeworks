@@ -26,7 +26,7 @@ const Board: React.FC<BoardProps> = ({ xIsNext, squares, onPlay }) => {
     }
 
     const createSquare = (i: number) => (
-        <Square value={squares[i]} onSquareClick={() => handleClick(0)} />
+        <Square value={squares[i]} onSquareClick={() => handleClick(i)} />
       );
 
     return (
