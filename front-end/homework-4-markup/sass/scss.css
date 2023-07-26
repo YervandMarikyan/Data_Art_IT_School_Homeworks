@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  padding: 10px 15px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .headLog-title {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav ul {
+  display: flex;
+  grid-gap: 10px;
+}
+header .nav ul a {
+  color: #000;
+}
+header li a:link {
+  text-decoration: none;
+}
+header li a:visited {
+  text-decoration: none;
+}
+header li a:hover {
+  text-decoration: none;
+}
+header li a:active {
+  text-decoration: none;
+}
+
+main {
+  width: auto;
+}
+main .top-slider-box {
+  position: relative;
+  width: auto;
+}
+main .top-slider-box img {
+  width: 100%;
+}
+main .top-slider-box .top-slider-box__name {
+  color: #fff;
+  left: 33.3333333333%;
+  position: absolute;
+  text-align: center;
+  top: 33.3333333333%;
+  z-index: 10;
+}
+main .top-slider-box .top-slider-box__name h2 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+main .top-slider-box .top-slider-box__name p {
+  letter-spacing: 3px;
+}
+main .main-info .vertical-line {
+  border-left: 6px solid #000;
+  height: 50px;
+  margin-left: 50%;
+  margin-bottom: 10px;
+}
+main .main-info .some-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main .main-info .some-text .some-text__first-part {
+  margin-bottom: 30px;
+}
+main .main-info .some-text .some-text__inner {
+  margin: auto;
+  width: 30%;
+}
+main .main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+main .main-content img {
+  width: 100%;
+}/*# sourceMappingURL=scss.css.map */

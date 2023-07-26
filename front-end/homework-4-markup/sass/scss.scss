@@ -1,0 +1,115 @@
+@import "reset";
+
+$a_col: #000;
+$big_foto_front_col: #fff;
+$body_pading: 35px;
+
+body {
+    padding: 10px $body_pading $body_pading;
+}
+
+header {
+    margin-bottom: 10px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .head-logo-title {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            grid-gap: 10px;
+
+            a {
+                color: $a_col;
+            }
+        }
+    }
+
+    & li a:link {
+        text-decoration: none;
+    }
+
+    & li a:visited {
+        text-decoration: none;
+    }
+
+    & li a:hover {
+        text-decoration: none;
+    }
+
+    & li a:active {
+        text-decoration: none;
+    }
+}
+
+main {
+    width: auto;
+
+    .top-slider-box {
+        position: relative;
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+
+        .top-slider-box__name {
+            color: $big_foto_front_col;
+            left: calc(100% / 3);
+            position: absolute;
+            text-align: center;
+            top: calc(100% / 3);
+            z-index: 10;
+
+            h2 {
+                font-size: 2rem;
+                letter-spacing: 5px;
+            }
+
+            p {
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    .main-info {
+        .vertical-line {
+            border-left: 6px solid $a_col;
+            height: 50px;
+            margin-left: calc(100% /2);
+            margin-bottom: 10px;
+        }
+
+        .some-text {
+            margin-bottom: 30px;
+            text-align: center;
+
+            .some-text__first-part {
+                margin-bottom: 30px;
+            }
+
+            .some-text__inner {
+                margin: auto;
+                width: 30%;
+            }
+        }
+    }
+
+    .main-content {
+        img {
+            width: 100%;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 35px;
+    }
+}
